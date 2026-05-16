@@ -130,40 +130,44 @@
                 </div>
 
                 <div class="lg:col-span-8 p-8 md:p-14 bg-white">
-                    <form name="pan-india-contact" method="POST" class="space-y-8">
-                        <div class="grid md:grid-cols-2 gap-6 md:gap-8">
-                            <div class="space-y-2">
-                                <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Full Name *</label>
-                                <input type="text" name="name" placeholder="E.g. Rajesh Kumar" required class="form-input w-full">
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Email Address *</label>
-                                <input type="email" name="email" placeholder="kumar@company.com" required class="form-input w-full">
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Mobile Number *</label>
-                                <input type="tel" name="phone" placeholder="+91 00000 00000" required class="form-input w-full">
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Organization / Company</label>
-                                <input type="text" name="company" placeholder="E.g. Tata Steel / Jindal Steel" class="form-input w-full">
-                            </div>
-                        </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+    <input type="hidden" name="access_key" value="e2d41f9c-572d-4150-a14a-c5e44d9b9b1e">
+    
+    <input type="hidden" name="subject" value="New Inquiry from Al Ali MEP Website">
 
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Project / Site Location</label>
-                            <input type="text" name="location" placeholder="E.g. Kharagpur Industrial Area" class="form-input w-full">
-                        </div>
+    <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+        <div class="space-y-2">
+            <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Full Name *</label>
+            <input type="text" name="name" placeholder="E.g. Rajesh Kumar" required class="form-input w-full">
+        </div>
+        <div class="space-y-2">
+            <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Email Address *</label>
+            <input type="email" name="email" placeholder="kumar@company.com" required class="form-input w-full">
+        </div>
+        <div class="space-y-2">
+            <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Mobile Number *</label>
+            <input type="tel" name="phone" placeholder="+91 00000 00000" required class="form-input w-full">
+        </div>
+        <div class="space-y-2">
+            <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Organization / Company</label>
+            <input type="text" name="company" placeholder="E.g. Tata Steel / Jindal Steel" class="form-input w-full">
+        </div>
+    </div>
 
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Scope of Work *</label>
-                            <textarea name="message" rows="4" required placeholder="Briefly describe your requirements (Maintenance, Fabrication, or MEP)..." class="form-input w-full"></textarea>
-                        </div>
+    <div class="space-y-2">
+        <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Project / Site Location</label>
+        <input type="text" name="location" placeholder="E.g. Kharagpur Industrial Area" class="form-input w-full">
+    </div>
 
-                        <button type="submit" class="bg-brand text-white w-full md:w-auto px-12 py-5 font-black uppercase text-[11px] tracking-[3px] rounded-2xl hover:bg-blue-800 transition-all shadow-xl shadow-blue-600/20 flex items-center justify-center gap-4 group">
-                            Submit Inquiry <i class="fas fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform"></i>
-                        </button>
-                    </form>
+    <div class="space-y-2">
+        <label class="text-[10px] font-black uppercase tracking-widest text-slate-400">Scope of Work *</label>
+        <textarea name="message" rows="4" required placeholder="Briefly describe your requirements (Maintenance, Fabrication, or MEP)..." class="form-input w-full"></textarea>
+    </div>
+
+    <button type="submit" class="bg-brand text-white w-full md:w-auto px-12 py-5 font-black uppercase text-[11px] tracking-[3px] rounded-2xl hover:bg-blue-800 transition-all shadow-xl shadow-blue-600/20 flex items-center justify-center gap-4 group">
+        Submit Inquiry <i class="fas fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform"></i>
+    </button>
+</form>
                 </div>
 
             </div>
